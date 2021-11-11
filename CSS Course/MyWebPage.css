@@ -1,18 +1,16 @@
-body {
-    height: 2000px;
+html, body {
+   /* height: 1000px; 
+   width: 2000px; */
+   height: 100%;
 }
 
-#container{
-    position: relative;
+#container {
+    background-color: lightcoral;
+    /* height: 500px; */
+    height: 50%;
 }
 
 #welcomeDiv {
     background-color: lightblue;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-}
-
-#nameDiv {
-    background-color: lightgreen;
+    height: 50%;
 }
