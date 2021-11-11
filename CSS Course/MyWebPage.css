@@ -1,23 +1,9 @@
-div {
-    background-color: lightgreen;
-}
+/* .personalInfo {
+    /* display: block; 
+    /* display: inline; 
+    /* display: none; 
+} */
 
-.main {
-    background-color: lightblue;
-}
-
-#welcomeDiv {
-    background-color: lightcoral;
-}
-
-div {
-    background-color: lightgrey;
-}
-
-* {
-    background-color: yellow;
-}
-
-div, footer {
-    background-color: thistle;
+#personalInfoDiv {
+    display: inline;
 }
