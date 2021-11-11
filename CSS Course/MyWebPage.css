@@ -1,9 +1,18 @@
-/* .personalInfo {
-    /* display: block; 
-    /* display: inline; 
-    /* display: none; 
-} */
+body {
+    height: 2000px;
+}
 
-#personalInfoDiv {
-    display: inline;
+#container{
+    position: relative;
+}
+
+#welcomeDiv {
+    background-color: lightblue;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+#nameDiv {
+    background-color: lightgreen;
 }
