@@ -1,7 +1,9 @@
 #container {
-    font-size: 30px;
-    font-weight: bold;
-    color: steelblue;
-    text-decoration: underline wavy black;
-    text-align: center;
+    /* border-width: 5px;
+    border-color: red;
+    border-style: dashed; */
+
+    border: 5px dashed red;
+
+    /* border-bottom: ; */
 }
