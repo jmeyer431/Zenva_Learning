@@ -1,16 +1,18 @@
 html, body {
-   /* height: 1000px; 
-   width: 2000px; */
-   height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 #container {
     background-color: lightcoral;
-    /* height: 500px; */
-    height: 50%;
+    height: 500px;
 }
 
 #welcomeDiv {
     background-color: lightblue;
     height: 50%;
+    /* margin: 50px; */
+    /* padding: 50px; */
+    margin: 10px 50px 10px 50px;
+    padding: 10px 50px 10px 50px;
 }
