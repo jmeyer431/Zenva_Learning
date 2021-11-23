@@ -1,37 +1,14 @@
-let item = 'window';
+let distance = 150;
+let fuel = 100; 
+let distanceCondition = distance <= 200 && distance >= 100;
+let isEngineFunctioning = false;
 
-if(item != 'engine'){
-    console.log('not engine!');
+if(distance > 200 || !isEngineFunctioning){
+    console.log('wont make it');
 }
-
-let score = 5;
-
-if(score >= 60){
-    console.log('pass');
+else if(distanceCondition && fuel >= 100){
+    console.log('you will make it');
 }
-else if(score < 10){
-    console.log('meet the teacher');
-}
-else{
-    console.log('not pass');
-}
-
-let isEngine = item == 'engine';
-console.log(isEngine);
-
-if(isEngine){
-
-}
-
-let balance = 100;
-let itemPrice = 101;
-
-// 1. check balance
-if (balance >= itemPrice){
-    balance -= itemPrice;
-    console.log('item purchased');
-    console.log(balance);
-}
-else{
-    console.log('not enough balance');
+else if(distance < 100 && fuel >= 25){
+    console.log('you will make it');
 }
