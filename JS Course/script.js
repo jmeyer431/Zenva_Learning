@@ -1,20 +1,48 @@
-let database = ['turtle', 'cat', 'dog', 'bird'];
+let scores = [10, 20, 10];
 
-console.log(database);
-console.log(database.length);
+let i = 0;
 
-let animal = database[1];
+while (i < scores.length){
+    scores[i]++;
+    i++;
+}
 
-console.log(animal);
+console.log(scores);
 
-database[0] = 'dinosaur';
-console.log(database);
+for(i = 0; i < scores.length; i++){
+    scores[i]++;
+}
 
-let last = database[database.length - 1];
-console.log(last);
+console.log(scores);
 
-database.push('lizard');
-console.log(database);
+scores.forEach(function(entry, index){
+    scores[index]++;
+});
 
-database.pop();
-console.log(database);
+console.log(scores);
+
+let catalog = [
+    {
+        title: 'JS for Beginners',
+        author: 'Zenva',
+        copies: 1
+    },
+    {
+        title: 'HTML for Beginners',
+        author: 'Zenva',
+        copies: 1
+    },
+    {
+        title: 'CSS for Beginners',
+        author: 'XYZ',
+        copies: 1
+    }
+];
+
+catalog.forEach(function(entry){
+    if(entry.author == 'Zenva'){
+        entry.copies++;
+    }
+});
+
+console.log(catalog);
