@@ -1,30 +1,24 @@
 let player = {
-    age: 29,
-    name: 'Justin',
-    isActive: true,
-    outfit: {
-        color: 'blue',
-        size: 'XL',
-        cost: 75,
-        isNew: false
+    health: 100,
+    fun: 0,
+    play: function(){
+        this.fun += 10;
+    },
+    eat: function(food){
+        if(food == 'apple'){
+            this.health += 10;
+        }
+        else if(food == 'candy'){
+            this.health -= 5;
+            this.fun += 5;
+        }
     }
 };
 
+player.play();
 console.log(player);
 
-console.log(player.name);
-console.log(player['name']);
+player.eat('apple');
+player.eat('candy');
 
-player.isActive = false;
-console.log(player);
-
-player.health = 100;
-console.log(player);
-
-delete player.health;
-console.log(player);
-
-console.log(player.outfit.color);
-
-player.outfit.size = 'L';
 console.log(player);
