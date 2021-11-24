@@ -1,16 +1,20 @@
-let populaton = 100;
+let database = ['turtle', 'cat', 'dog', 'bird'];
 
-// let i = 0;
+console.log(database);
+console.log(database.length);
 
-// while (i < 10){
-//     populaton *= 1.05;
-//     i++;
-// }
+let animal = database[1];
 
-// console.log(populaton);
+console.log(animal);
 
-for (var i = 0; i < 10; i++){
-    populaton *= 1.05;
-}
+database[0] = 'dinosaur';
+console.log(database);
 
-console.log(populaton);
+let last = database[database.length - 1];
+console.log(last);
+
+database.push('lizard');
+console.log(database);
+
+database.pop();
+console.log(database);
