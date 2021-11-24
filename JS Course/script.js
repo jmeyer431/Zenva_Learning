@@ -1,48 +1,17 @@
-let scores = [10, 20, 10];
+let a = [[1, 2, 3], [4, 5, 6, 7]];
+console.log(a);
 
-let i = 0;
+console.log(a[0][1]);
 
-while (i < scores.length){
-    scores[i]++;
-    i++;
-}
+a[1][2] = 100;
 
-console.log(scores);
+console.log(a[1][2]);
 
-for(i = 0; i < scores.length; i++){
-    scores[i]++;
-}
-
-console.log(scores);
-
-scores.forEach(function(entry, index){
-    scores[index]++;
-});
-
-console.log(scores);
-
-let catalog = [
-    {
-        title: 'JS for Beginners',
-        author: 'Zenva',
-        copies: 1
-    },
-    {
-        title: 'HTML for Beginners',
-        author: 'Zenva',
-        copies: 1
-    },
-    {
-        title: 'CSS for Beginners',
-        author: 'XYZ',
-        copies: 1
-    }
+let terrains = [
+    ['desert', 'desert', 'grass', 'grass'],
+    ['desert', 'grass', 'water', 'grass'],
+    ['grass', 'grass', 'water', 'water'],
+    ['grass', 'grass', 'grass', 'grass']
 ];
 
-catalog.forEach(function(entry){
-    if(entry.author == 'Zenva'){
-        entry.copies++;
-    }
-});
-
-console.log(catalog);
+console.log(terrains);
