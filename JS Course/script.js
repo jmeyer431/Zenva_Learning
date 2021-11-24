@@ -1,24 +1,20 @@
-let player = {
-    health: 100,
-    fun: 0,
-    play: function(){
-        this.fun += 10;
-    },
-    eat: function(food){
-        if(food == 'apple'){
-            this.health += 10;
-        }
-        else if(food == 'candy'){
-            this.health -= 5;
-            this.fun += 5;
-        }
-    }
-};
+function sendSignal(){
+    console.log('HELP');
+}
 
-player.play();
-console.log(player);
+let i = 0;
 
-player.eat('apple');
-player.eat('candy');
+while(i < 1000){
+    sendSignal();
+    i++;
+}
 
-console.log(player);
+let result = 0;
+
+let j = 1;
+
+while (j <= 10){
+    result += j;
+    console.log(result);
+    j++;
+}
