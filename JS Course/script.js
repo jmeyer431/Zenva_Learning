@@ -1,18 +1,16 @@
-let fuel = 1000;
-let distance = 0;
+let populaton = 100;
 
-while(fuel > 0){
-    distance++;
+// let i = 0;
 
-    if(distance >= 100 && distance <= 200){
-        continue;
-    }
+// while (i < 10){
+//     populaton *= 1.05;
+//     i++;
+// }
 
-    fuel--;
+// console.log(populaton);
 
-    if(distance == 500){
-        break;
-    }
+for (var i = 0; i < 10; i++){
+    populaton *= 1.05;
 }
 
-console.log(distance, fuel);
+console.log(populaton);
