@@ -1,38 +1,30 @@
-// 1 hour = 60 minutes
-function hourToMinutes(hours){
-    let result = hours * 60;
-    console.log(result);
-    return result;
-}
-
-let a = hourToMinutes(10);
-let b = hourToMinutes(20);
-
-let dayToHours = function(days) {
-    return days * 24;
+let player = {
+    age: 29,
+    name: 'Justin',
+    isActive: true,
+    outfit: {
+        color: 'blue',
+        size: 'XL',
+        cost: 75,
+        isNew: false
+    }
 };
 
-let c = dayToHours(1);
-console.log(c);
+console.log(player);
 
-// variable declaration
-let balance = 100;
-let stock = 50;
-let price = 5;
+console.log(player.name);
+console.log(player['name']);
 
-function shop(quantity){
-    if(stock >= quantity){
-        balance += quantity * price;
-        stock -= quantity;
+player.isActive = false;
+console.log(player);
 
-        console.log('purchase completed', balance, stock)
-    }
-    else{
-        console.log('not enough stock');
-    }
-}
+player.health = 100;
+console.log(player);
 
-shop(8);
-shop(4);
-shop(2);
-shop(200);
+delete player.health;
+console.log(player);
+
+console.log(player.outfit.color);
+
+player.outfit.size = 'L';
+console.log(player);
