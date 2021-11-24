@@ -1,14 +1,38 @@
-let distance = 150;
-let fuel = 100; 
-let distanceCondition = distance <= 200 && distance >= 100;
-let isEngineFunctioning = false;
+// 1 hour = 60 minutes
+function hourToMinutes(hours){
+    let result = hours * 60;
+    console.log(result);
+    return result;
+}
 
-if(distance > 200 || !isEngineFunctioning){
-    console.log('wont make it');
+let a = hourToMinutes(10);
+let b = hourToMinutes(20);
+
+let dayToHours = function(days) {
+    return days * 24;
+};
+
+let c = dayToHours(1);
+console.log(c);
+
+// variable declaration
+let balance = 100;
+let stock = 50;
+let price = 5;
+
+function shop(quantity){
+    if(stock >= quantity){
+        balance += quantity * price;
+        stock -= quantity;
+
+        console.log('purchase completed', balance, stock)
+    }
+    else{
+        console.log('not enough stock');
+    }
 }
-else if(distanceCondition && fuel >= 100){
-    console.log('you will make it');
-}
-else if(distance < 100 && fuel >= 25){
-    console.log('you will make it');
-}
+
+shop(8);
+shop(4);
+shop(2);
+shop(200);
