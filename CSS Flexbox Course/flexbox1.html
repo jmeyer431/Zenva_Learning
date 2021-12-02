@@ -8,14 +8,15 @@
         <style>
             #parent{
                 background: lightblue;
-                padding: 10px;
+                /* padding: 10px; */
                 display: flex;
-                flex-flow: row wrap;
-                justify-content: space-around;
+                flex-flow: row nowrap;
+                /* justify-content: space-around; */
             }
 
             .childItem{
-                width: 100px;
+                /* width: 300px; */
+                flex-basis: 300px;
             }
 
             .child1{
@@ -30,7 +31,7 @@
                 background: dodgerblue;
             }
 
-            .child4{
+            /* .child4{
                 background: khaki;
             }
 
@@ -52,7 +53,7 @@
 
             .child9{
                 background: forestgreen;
-            }
+            } */
         </style>
     </head>
 
@@ -61,12 +62,12 @@
             <div class="childItem child1">1</div>
             <div class="childItem child2">2</div>
             <div class="childItem child3">3</div>
-            <div class="childItem child4">4</div>
+            <!-- <div class="childItem child4">4</div>
             <div class="childItem child5">5</div>
             <div class="childItem child6">6</div>
             <div class="childItem child7">7</div>
             <div class="childItem child8">8</div>
-            <div class="childItem child9">9</div>
+            <div class="childItem child9">9</div> -->
         </div>
     </body>
 </html>
