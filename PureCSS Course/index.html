@@ -35,6 +35,10 @@
                 background-color: orange;
             }
 
+            #all-chats-container {
+                max-height: 85%;
+            }
+
             #col-two {
                 max-height: 100%;
             }
@@ -48,7 +52,7 @@
     <body>
         <div id="header" class="pure-g">
             <div id="profile-dropdown" class="pure-u-1 pure-u-sm-1-4">
-                <div class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <div class="pure-menu-item pure-menu-selected pure-menu-has-children pure-menu-allow-hover">
                     <a href="#" class="pure-menu-link">
                         Profile
                     </a>
@@ -87,7 +91,90 @@
 
         <div id="main" class="pure-g">
             <div id="col-one" class="pure-u-1 pure-u-sm-1-3 pure-u-xl-1-4">
-                Column one text
+                <div id="all-chats-container" class="pure-menu pure-menu-scrollable">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-heading">
+                            <a href="#" class="pure-menu-link">
+                                All Groups
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item pure-menu-selected">
+                            <a href="#" class="pure-menu-link">
+                                All Messages
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                Unreads
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                Mentions
+                            </a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                Announcements
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                All Channels
+                            </a>
+                        </li>
+
+                        <br>
+                        <br>
+
+                        <li class="pure-menu-heading">
+                            <a href="#" class="pure-menu-link">
+                                All Messages
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item pure-menu-selected">
+                            <a href="#" class="pure-menu-link">
+                                Design
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                Engineering
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                Team
+                            </a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                Clothing
+                            </a>
+                        </li>
+
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                News
+                            </a>
+                        </li>
+                        
+                        <li class="pure-menu-item">
+                            <a href="#" class="pure-menu-link">
+                                Team Announcements
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div id="col-two" class="pure-u-1 pure-u-sm-2-3 pure-u-xl-1-2">
