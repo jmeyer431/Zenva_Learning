@@ -41,6 +41,23 @@
 
             #col-two {
                 max-height: 100%;
+                position: relative;
+                display: flex;
+                flex-flow: column;
+            }
+
+            #chats-container {
+                flex-grow: 1;
+            }
+
+            .received-message {
+                margin-left: 10px;
+            }
+
+            .sent-message {
+                text-align: right;
+                margin-left: auto;
+                margin-right: 10px;
             }
 
             #col-three {
@@ -178,7 +195,80 @@
             </div>
 
             <div id="col-two" class="pure-u-1 pure-u-sm-2-3 pure-u-xl-1-2">
-                Column two text
+                <div id="chats-container" class="pure-menu pure-menu-scrollable">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item received-message">
+                            <h3>Mark</h3>
+                            <p>Received Message 1</p>
+                        </li>
+
+                        <li class="pure-menu-item sent-message">
+                            <h3>Me</h3>
+                            <p>Sent Message 1</p>
+                        </li>
+
+                        <li class="pure-menu-item received-message">
+                            <h3>Mark</h3>
+                            <p>Received Message 2</p>
+                        </li>
+
+                        <li class="pure-menu-item sent-message">
+                            <h3>Me</h3>
+                            <p>Sent Message 2</p>
+                        </li>
+
+                        <li class="pure-menu-item received-message">
+                            <h3>Mark</h3>
+                            <p>Received Message 3</p>
+                        </li>
+
+                        <li class="pure-menu-item sent-message">
+                            <h3>Me</h3>
+                            <p>Sent Message 3</p>
+                        </li>
+
+                        <li class="pure-menu-item received-message">
+                            <h3>Mark</h3>
+                            <p>Received Message 4</p>
+                        </li>
+
+                        <li class="pure-menu-item sent-message">
+                            <h3>Me</h3>
+                            <p>Sent Message 4</p>
+                        </li>
+
+                        <li class="pure-menu-item received-message">
+                            <h3>Mark</h3>
+                            <p>Received Message 5</p>
+                        </li>
+
+                        <li class="pure-menu-item sent-message">
+                            <h3>Me</h3>
+                            <p>Sent Message 5</p>
+                        </li>
+
+                        <li class="pure-menu-item received-message">
+                            <h3>Mark</h3>
+                            <p>Received Message 6</p>
+                        </li>
+
+                        <li class="pure-menu-item sent-message">
+                            <h3>Me</h3>
+                            <p>Sent Message 6</p>
+                        </li>
+
+                        <li class="pure-menu-item received-message">
+                            <h3>Mark</h3>
+                            <p>Received Message 7</p>
+                        </li>
+
+                        <li class="pure-menu-item sent-message">
+                            <h3>Me</h3>
+                            <p>Sent Message 7</p>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
 
             <div id="col-three" class="pure-u-1 pure-u-xl-1-4">
