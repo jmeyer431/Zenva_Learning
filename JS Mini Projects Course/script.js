@@ -24,6 +24,7 @@ let questions = [
 let app = {
     start: function(){
         this.currentPosition = 0;
+        this.score = 0;
 
         let alts = document.querySelectorAll('.alternative');
 
@@ -33,6 +34,7 @@ let app = {
             });
         });
     
+        this.updateStats();
         this.showQuestion(questions[this.currentPosition]);
     },
 
@@ -50,13 +52,18 @@ let app = {
 
     checkAnswer: function(userSelected){
         let currentQuestion = questions[this.currentPosition];
+
         if(currentQuestion.correctAnswer == userSelected){
             console.log('Correct!');
+            this.score++;
+            this.showResult(true);
         }
         else{
             console.log('Incorrect!');
+            this.showResult(false);
         }
 
+        this.updateStats();
         this.increasePosition();
         this.showQuestion(questions[this.currentPosition]);
     },
@@ -67,6 +74,30 @@ let app = {
         if(this.currentPosition == questions.length){
             this.currentPosition = 0;
         }
+    },
+
+    updateStats: function(){
+        let scoreDiv = document.getElementById('score');
+
+        scoreDiv.textContent = `Your score: ${this.score}`;
+    },
+
+    showResult: function(isCorrect){
+        let resultDiv = document.getElementById('result');
+        let result = "";
+
+        if(isCorrect){
+            result = 'Correct Answer!';
+        }
+        else{
+            let currentQuestion = questions[this.currentPosition];
+            let correctAnswerIndex = currentQuestion.correctAnswer;
+            let correctAnswerText = currentQuestion.alternatives[correctAnswerIndex];
+
+            result = `Wrong! Correct answer: ${correctAnswerText}`;
+        }
+
+        resultDiv.textContent = result;
     }
 };
 
