@@ -4,6 +4,18 @@ let question = {
     correctAnswer: 1
 }
 
+function start(){
+    let alts = document.querySelectorAll('.alternative');
+    
+    alts.forEach(function(element, index){
+        element.addEventListener('click', function(){
+            console.log('check correct answer');
+        });
+    });
+
+    showQuestion(question);
+}
+
 function showQuestion(q){
     let titleDiv = document.getElementById('title');
     
@@ -13,15 +25,7 @@ function showQuestion(q){
     
     alts.forEach(function(element, index){
         element.textContent = q.alternatives[index];
-        element.addEventListener('click', function(){
-            if(index == q.correctAnswer){
-                console.log('Correct Answer!');
-            }
-            else{
-                console.log('Wrong Answer!');
-            }
-        });
     });
 }
 
-showQuestion(question);
+start();
