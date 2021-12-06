@@ -13,6 +13,14 @@ function showQuestion(q){
     
     alts.forEach(function(element, index){
         element.textContent = q.alternatives[index];
+        element.addEventListener('click', function(){
+            if(index == q.correctAnswer){
+                console.log('Correct Answer!');
+            }
+            else{
+                console.log('Wrong Answer!');
+            }
+        });
     });
 }
 
